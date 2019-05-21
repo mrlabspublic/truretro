@@ -16,10 +16,12 @@ export class AppComponent implements OnInit {
           {
               label: 'Dashboard',
               icon: 'pi pi-fw pi-home',
+              routerLink: '/dashboard',
           },
           {
               label: 'Team',
               icon: 'pi pi-fw pi-users',
+              routerLink: '/team',
           },
           {
             label: 'Analytics',
