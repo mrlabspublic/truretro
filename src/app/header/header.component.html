@@ -1,0 +1,12 @@
+<div>
+  <div class="row">
+    <div class="col-xs-12">
+        <p-menubar [model]="items">
+          <div>
+              <p-menu #menu [popup]="true" [model]="logoutItems"></p-menu>
+              <button type="button" pButton icon="pi pi-bars" (click)="menu.toggle($event)"></button>
+          </div>
+        </p-menubar>
+    </div>
+  </div>
+ </div>
