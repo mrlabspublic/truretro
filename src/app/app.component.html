@@ -1,6 +1,13 @@
-<p-menubar [model]="items">
-  <div>
-      <input type="text" pInputText placeholder="Search">
-      <button pButton label="Logout" icon="fa fa-sign-out" style="margin-left:.25em"></button>
+
+<div>
+  <div class="row">
+    <div class="col-xs-12">
+        <p-menubar [model]="items">
+          <div>
+              <p-menu #menu [popup]="true" [model]="logoutItems"></p-menu>
+              <button type="button" pButton icon="pi pi-bars" (click)="menu.toggle($event)"></button>
+          </div>
+        </p-menubar>
+    </div>
   </div>
-</p-menubar>
+</div>
